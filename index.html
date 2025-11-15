@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prénom NOM | Étudiant Licence – Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome (icônes) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- ================= NAV ================= -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <span class="logo">LF</span> <!-- 🔧 initiales -->
+      <ul class="nav-links">
+        <li><a href="#home">Accueil</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#skills">Compétences</a></li>
+        <li><a href="#projects">Projets</a></li>
+        <li><a href="#experience">Expérience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="burger"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </nav>
+
+  <!-- ================= HERO ================= -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Lucresse<span class="red">Fonkou</span></h1>
+      <p class="tagline">salut je suis developpeur web et je cree des expériences numériques, modernes et performantes</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn primary">Me contacter</a>
+        <a href="cv.pdf" target="_blank" class="btn ghost">Télécharger mon CV</a> <!-- 🔧 renomme cv.pdf -->
+      </div>
+      <div class="social">
+        <a href="https://linkedin.com/in/xxx" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/xxx" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= À PROPOS ================= -->
+  <section id="about" class="section">
+    <h2>À propos <span class="red">.</span></h2>
+    <div class="about-grid">
+      <img src="images/1001006316.jpg" alt="Ma photo" class="photo"> <!-- 🔧 ta photo -->
+      <div class="text">
+        <p>Je suis actuellement <strong>developpeur</strong> Passionné par le développement web et mobile, avec egalement une expertise en <strong>une HTML, CSS, JavaScript, React, node.js</strong> à partir de septembre 2025.</p>
+        <ul class="info">
+          <li><i class="fa-solid fa-envelope"></i> lucressefonkou6@gmail.com</li>
+          <li><i class="fa-solid fa-phone"></i> +237 693366133</li>
+          <li><i class="fa-solid fa-location-dot"></i> Douala, Cameroun</li>
+          <li><i class="fa-solid fa-car"></i> Permis B + véhicule</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COMPÉTENCES ================= -->
+  <section id="skills" class="section">
+    <h2>Compétences <span class="red">.</span></h2>
+    <div class="skills-grid">
+      <!-- 🔧 modifie % dans data-percent -->
+      <div class="skill-card"><span>HTML/CSS</span><div class="bar"><div style="--p:80%"></div></div></div>
+      <div class="skill-card"><span>JavaScript</span><div class="bar"><div style="--p:50%"></div></div></div>
+      <div class="skill-card"><span>React</span><div class="bar"><div style="--p:18%"></div></div></div>
+      <div class="skill-card"><span>Node.js</span><div class="bar"><div style="--p:30%"></div></div></div>
+      <div class="skill-card"><span>Python</span><div class="bar"><div style="--p:14%"></div></div></div>
+      <div class="skill-card"><span>MySQL</span><div class="bar"><div style="--p:27%"></div></div></div>
+    </div>
+  </section>
+
+  <!-- ================= PROJETS ================= -->
+  <section id="projects" class="section">
+    <h2>Projets <span class="red">.</span></h2>
+    <div class="projects-grid">
+      <!-- 🔧 duplique cette carte pour chaque projet -->
+      <div class="project-card">
+        <img src="images/bb.PNG" alt="Projet 1">
+        <div class="overlay">
+          <h3>Gestion des livres d'une bibliothèque</h3>
+          <p>CRUD complet en React + Node + MySQL</p>
+          <a href="https://github.com/xxx/biblio" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/app.PNG" alt="Projet 2">
+        <div class="overlay">
+          <h3>App Météo</h3>
+          <p>Flutter + API OpenWeather</p>
+          <a href="https://github.com/xxx/meteo" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/cv.PNG" alt="Projet 2">
+        <div class="overlay">
+          <h3>APP DE Gestion de stage</h3>
+          <p>Flutter + API OpenWeather</p>
+          <a href="https://github.com/xxx/meteo" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+      <div class="project-card">
+        <img src="images/cap.PNG" alt="Projet 2">
+        <div class="overlay">
+          <h3>calculatrice web </h3>
+          <p>Flutter + API OpenWeather</p>
+          <a href="https://github.com/xxx/meteo" target="_blank"><i class="fa-brands fa-github"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= EXPÉRIENCE ================= -->
+  <section id="experience" class="section">
+    <h2>Expérience <span class="red">.</span></h2>
+    <div class="timeline">
+      <div class="item">
+        <div class="date">2025</div>
+        <div class="content">
+          <h4>stage d'observation et recueillement de données chez Anna mèche</h4>
+          <p>Encadrement de travaux pratiques d’algorithmique (C/Python).</p>
+        </div>
+      </div>
+      <div class="item">
+        <div class="date">2024</div>
+        <div class="content">
+          <h4>Développeur web (stage) – chez UCB</h4>
+          <p>site e-commerce + commande en ligne (WordPress → PHP).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section">
+    <h2>Contact <span class="red">.</span></h2>
+    <form action="https://formsubmit.co/prenom.nom@etu.univ.fr" method="POST"> <!-- 🔧 ton mail -->
+      <input type="text" name="name" placeholder="Nom" required>
+      <input type="email" name="email" placeholder="E-mail" required>
+      <textarea name="message" rows="5" placeholder="Votre message" required></textarea>
+      <button type="submit" class="btn primary full">Envoyer</button>
+    </form>
+  </section>
+
+  <footer>
+    © <span id="year"></span> LUCRESSEFONKOU – Licence Informatique
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
